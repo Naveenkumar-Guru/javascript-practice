@@ -45,11 +45,11 @@ if (numbers % 2 === 0) {
 
 //6. Write a program to print the greatest number in given two numbers?
 
-let num1 = 5;
+var num1 = 5;
 
-let num2 = 10;
+var num2 = 10;
 
-let num3 = 15;
+var num3 = 15;
 
 if (num1 > num2) {
   console.log(num1);
@@ -86,3 +86,5 @@ if (num1 <= num2 && num1 <= num3) {
 }
 
 console.log("The least number is:", least);
+
+
