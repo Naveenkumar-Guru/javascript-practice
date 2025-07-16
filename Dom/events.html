@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouseover Example</title>
+    <script src="events.html" defer></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: wheat;
+      }
+      .events-containers,
+      h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 50px;
+      }
+      button {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+        font-family: roboto;
+        font-weight: 700;
+      }
+      h1,
+      h2 {
+        font-family: roboto;
+        font-size: 14;
+      }
+      .p {
+        font-family: roboto;
+        font-size: 10;
+      }
+      #input1,
+      #input2 {
+        width: 200px;
+        height: 33px;
+        text-align: center;
+      }
+    </style>
+    <h1>Javascript Events</h1>
+    <div class="events-containers">
+      <div>
+        <h2>OnMouseover</h2>
+        <p id="btn1"></p>
+        <button id="myButton1" onmouseover="mouseoverEffect()">
+          Hover Me!
+        </button>
+      </div>
+
+      <div>
+        <h2>OnMouseout</h2>
+        <p id="btn2"></p>
+        <button id="myButton2" onmouseout="onMouseout()">Mouse Out</button>
+      </div>
+
+      <div>
+        <h2>Onclick</h2>
+        <p id="btn3"></p>
+        <button id="myButton3" onclick="handleClick()">Click Me</button>
+      </div>
+    </div>
+
+    <div class="events-containers">
+      <div>
+        <h2>Ondblclick</h2>
+        <p id="btn4"></p>
+        <button id="myButton4" ondblclick="handleDoubleClick()">
+          Double Click
+        </button>
+      </div>
+
+      <div>
+        <h2>Onfocus</h2>
+        <p id="msg1"></p>
+        <input
+          type="text"
+          id="input1"
+          onfocus="onFocusEvent()"
+          placeholder="Onfocus"
+        />
+      </div>
+
+      <div>
+        <h2>Onblur</h2>
+        <p id="msg2"></p>
+        <input
+          type="text"
+          id="input2"
+          onblur="toUpperCase()"
+          placeholder="Onblur"
+        />
+      </div>
+    </div>
+  </body>
+</html>
