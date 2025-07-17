@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function validateForm() {
+        let name = document.getElementById("username").value;
+        let email = document.getElementById("email-id").value;
+
+        if (name === "") {
+          alert("please enter  name");
+          return false;
+        }
+        if (email === "") {
+          alert("please enter email-id");
+          return false;
+        }
+
+        let emailpattens = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+        if (!emailpattens.test(email)) {
+          alert("Invalid email format");
+          return false;
+        }
+        alert("Form submitted successfully");
+      }
+    </script>
+    <form onsubmit="return validateForm()">
+      <label>Name</label><br />
+      <input
+        type="text"
+        id="username"
+        placeholder="Name"
+        required
+      /><br /><br />
+
+      <label>email</label><br />
+      <input
+        type="text"
+        id="email-id"
+        placeholder="email"
+        required
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
