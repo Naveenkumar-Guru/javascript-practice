@@ -1,6 +1,6 @@
 //21.Write a program to check if a number is divisible by 7 or not? let number = 7;
 
-let number = 7;
+let number = 10;
 if (number % 7 === 0) {
   console.log("it is divisiable");
 } else {
@@ -102,14 +102,3 @@ let emp_id = [100, 10, 55, 65, 20, 85];
 
 emp_id.sort((a, b) => b - a);
 console.log(emp_id);
-
-console.log("fhghghghg");
-let a = 100;
-let b = 50;
-let c = 10;
-
-// let list = [88, 77, 66, 55, 66, 77];
-
-// let newlist = [...new Set(list)];
-// // let newlist = new Set(list);
-// console.log(newlist);
